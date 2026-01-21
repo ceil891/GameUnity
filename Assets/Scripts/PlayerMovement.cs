@@ -6,13 +6,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0;
+        float h = Input.GetAxis("Horizontal"); // A D
+        float v = Input.GetAxis("Vertical");   // W S
 
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            mousePos,
-            speed * Time.deltaTime
-        );
+        Vector3 move = new Vector3(h, v, 0);
+        transform.Translate(move * speed * Time.deltaTime);
     }
 }
