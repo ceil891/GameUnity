@@ -1,15 +1,13 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5f;
-
+    // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxis("Horizontal"); // A D
-        float v = Input.GetAxis("Vertical");   // W S
-
-        Vector3 move = new Vector3(h, v, 0);
-        transform.Translate(move * speed * Time.deltaTime);
+        var worldPoint =
+        Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        worldPoint.z = 0;
+        transform.position = worldPoint;
     }
 }
