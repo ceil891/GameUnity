@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 5c55400b1788c904a8a0b23c5f6bf6b2
+  productGUID: 824da5ac6a2b5aa4ea8a2ebdc9c0be01
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -967,12 +967,12 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 2
+  activeInputHandler: 0
   windowsGamepadBackendHint: 0
   cloudProjectId: 20031d61-c7bd-43ff-90f6-eb69cfc3d41b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: GameUnity3
+  projectName: Space Shooter FREE
   organizationId: luuhung261125
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
